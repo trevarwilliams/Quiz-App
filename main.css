@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('http://pavbca.com/walldb/original/2/3/e/280565.jpg') fixed no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(213,213,218);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Clearfix */
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+
+header::after {
+    clear: both;
+}
+
+/* Page styling desktop */
+header {
+    width: 75%;
+    font-size: 25px;
+}
+
+header ul li{
+    text-align: right;
+    list-style: none;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+header, h1, h2, span.feedback, span.results {
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+div.startPage, div.quizBody {
+    display: block;
+    height: 395px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+input[type=radio] {
+    margin-right: 10px;
+}
+
+label.answerLabel {
+    display: block;
+    background-color: rgb(83,90,104);
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    line-height: 20px;
+    transition: 0.2s;
+}
+
+label.answerLabel:hover {
+    background-color: rgb(127,158,178);
+}
+
+section.feedbackContainer {
+    background-color: rgb(37,33,34);
+    padding: 10px;
+}
+
+span.feedback, span.results {
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
+    color: whitesmoke;
+    text-align: left;
+}
+
+span.results {
+    text-align: center;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: rgb(40,40,40);
+    transition: 0.2s;
+    color: rgb(213,213,218);
+}
+
+button.startButton, button.nextButton, button.restartButton {
+    margin-top: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(138,165,164);
+}
+
+/* Page styling mobile */
+@media screen and (max-width: 768px) {
+    header {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    div.startPage, div.quizBody {
+        display: block;
+        height: 395px;
+        width: 90%;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    span.feedback {
+        font-size: 1.5em;
+    }
+}
